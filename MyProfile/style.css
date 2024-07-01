@@ -1,0 +1,134 @@
+body{
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* ヘッダー */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  font-size: 34px;
+  padding: 10px 30px;
+  border: 1px solid #000000;
+  margin-left: 180px;
+}
+header nav{
+  margin-right: 150px;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+header nav a{
+  margin-right: 30px;
+  text-decoration: none;
+
+}
+
+header nav a:link{
+  color: #000000;
+}
+
+header nav a:hover{
+  color: #000000;
+}
+
+header nav a:visited{
+  color: #000000;
+}
+
+header nav a:active{
+  color: #000000;
+}
+
+/* メインエリア */
+.main_area{
+  margin: 0 auto 60px;
+  max-height: 400px;
+}
+
+.main_area img{
+  width: 100%;
+}
+
+h2{
+  font-size: 34px;
+  margin: 0 0 40px 0;
+  text-align: center;
+  line-height: 1.0;
+}
+
+/* Aboutエリア */
+.about_area{
+  width: 62.5%;
+  margin: 0 auto 60px;
+}
+
+.about_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 160px;
+}
+
+.about_content .content01{
+  width: 25%;
+}
+
+.about_content img{
+  border-radius: 50%;
+  width: 100%;
+}
+
+.about_content .content02 p{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about_content .content02 li{
+  font-size: 18px;
+}
+
+.works_area{
+  width: 62.5%;
+  margin: 0 auto 60px;
+}
+
+.works_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.works_content div{
+  width: 33.3%;
+  text-align: center;
+}
+
+.works_content div img{
+  width: 92%;
+  display: block;
+  margin: 0 auto;
+}
+
+.works_content div p{
+  font-size: 18px;
+  margin: 0;
+  padding: 30px 11px 0 11px;
+
+}
+
+.footer_txt{
+  text-align: center;
+  font-size: 18px;
+  margin: 20px auto;
+}
