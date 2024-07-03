@@ -6,7 +6,7 @@ body{
   font-weight: normal;
   font-style: normal;
   margin: 0 auto;
-  max-width: 960px;
+  width: 600px;
 }
 
 /* ヘッダー */
@@ -20,16 +20,14 @@ header h1{
   font-size: 34px;
   padding: 10px 30px;
   border: 1px solid #000000;
-  margin-left: 180px;
 }
 header nav{
-  margin-right: 150px;
   font-size: 34px;
   font-weight: bold;
 }
 
 header nav a{
-  margin-right: 30px;
+  margin-left: 30px;
   text-decoration: none;
 
 }
@@ -53,11 +51,13 @@ header nav a:active{
 /* メインエリア */
 .main_area{
   margin: 0 auto 60px;
-  max-height: 400px;
+  width: 960px;
+  height: 400px;
 }
 
 .main_area img{
   width: 100%;
+
 }
 
 h2{
@@ -69,7 +69,7 @@ h2{
 
 /* Aboutエリア */
 .about_area{
-  width: 62.5%;
+  width: 100%;
   margin: 0 auto 60px;
 }
 
@@ -100,30 +100,33 @@ h2{
 }
 
 .works_area{
-  width: 62.5%;
+  width: 100%;
   margin: 0 auto 60px;
 }
 
 .works_content{
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
-.works_content div{
+.works_content li{
   width: 33.3%;
   text-align: center;
+  margin: 0 10px;
+  list-style: none;
 }
 
-.works_content div img{
-  width: 92%;
+.works_content li img{
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-.works_content div p{
+.works_content li p{
   font-size: 18px;
   margin: 0;
-  padding: 30px 11px 0 11px;
+  padding: 30px 6px 0 6px;
 
 }
 
