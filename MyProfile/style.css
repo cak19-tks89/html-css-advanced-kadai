@@ -6,7 +6,6 @@ body{
   font-weight: normal;
   font-style: normal;
   margin: 0 auto;
-  width: 600px;
 }
 
 /* ヘッダー */
@@ -14,6 +13,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 600px;
+  margin: 0 auto;
 }
 
 header h1{
@@ -51,12 +52,15 @@ header nav a:active{
 /* メインエリア */
 .main_area{
   margin: 0 auto 60px;
-  width: 960px;
-  height: 400px;
+  width: auto;
+  overflow: hidden;
 }
 
 .main_area img{
   width: 100%;
+  max-width: 960px;
+  display: block;
+  margin: 0 auto;
 
 }
 
@@ -69,7 +73,7 @@ h2{
 
 /* Aboutエリア */
 .about_area{
-  width: 100%;
+  width: 600px;
   margin: 0 auto 60px;
 }
 
@@ -100,7 +104,7 @@ h2{
 }
 
 .works_area{
-  width: 100%;
+  width: 600px;
   margin: 0 auto 60px;
 }
 
@@ -128,6 +132,10 @@ h2{
   margin: 0;
   padding: 30px 6px 0 6px;
 
+}
+
+.footer{
+  width: 600px;
 }
 
 .footer_txt{
