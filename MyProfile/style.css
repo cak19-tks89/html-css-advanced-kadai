@@ -54,14 +54,15 @@ header nav a:active{
   margin: 0 auto 60px;
   width: auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .main_area img{
-  width: 100%;
+  /* width: 100%; */
   max-width: 960px;
   display: block;
   margin: 0 auto;
-
 }
 
 h2{
@@ -115,9 +116,9 @@ h2{
 }
 
 .works_content li{
-  width: 33.3%;
+  width: 31.5%;
   text-align: center;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   list-style: none;
 }
 
