@@ -3,14 +3,21 @@ body{
   margin: 0;
 }
 
+p{
+  margin: 0;
+}
+
+
 header{
-  max-width: 1200px;
+  background-color: #ffffff;
+}
+
+header div{
+  max-width: 1300px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
-  z-index: 20;
 }
 
 h1{
@@ -24,10 +31,6 @@ nav a{
   color: #000000;
   text-decoration: none;
   margin: 0 10px;
-}
-
-.btn_guidelines{
-
 }
 
 .btn_guidelines a{
@@ -50,18 +53,17 @@ nav a{
 }
 
 .top_visual{
-  position: relative;
-  z-index: 10;
-  top: -30vh;
-}
-
-.top_visual img{
-  width: 100%;
+  background-image: url('images/top_visual.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
 
 .top_visual h2{
   position: absolute;
-  top: 80vh;
+  bottom: 8vh;
   left: 10vw;
   margin: 0;
   font-size: 70px;
@@ -69,4 +71,64 @@ nav a{
   color: #ffffff;
 }
 
+h3{
+  font-size: 40px;
+  font-weight: bold;
+}
 
+#know_company{
+  background-color: #f8f8f8;
+
+}
+
+.know_company01{
+  margin: 0 auto;
+  max-width: 1300px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.know_company02{
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.know_company02 div{
+  width: 40%;
+  margin: 0 30px;
+  position: relative;
+  overflow:hidden;
+}
+
+.know_company02 div img{
+  width: 100%;
+  border-radius: 5%;
+  transition:1s all;
+
+}
+
+.know_company02 div img:hover{
+  transform:scale(1.1);
+  transition:1s all;
+  border-radius: 5%;
+}
+
+.know_company02 div .ttl{
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+}
+
+.know_company02 div .txt{
+  font-size: 18px;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+}
