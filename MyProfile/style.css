@@ -144,3 +144,48 @@ h2{
   font-size: 18px;
   margin: 20px auto;
 }
+
+@media screen and (max-width: 767px){
+  header{
+    width: 100%;
+  }
+
+  header h1{
+    margin-left: 3%;
+  }
+
+  header nav{
+    margin-right: 3%;
+  }
+
+  .main_area{
+    display: block;
+    /* width: 100%; */
+  }
+
+  .main_area img{
+    width: 100%;
+  }
+
+  .about_area{
+    width: 100%;
+  }
+
+  .about_content{
+    padding: 0 8%;
+  }
+
+  .works_area{
+    width: 100%;
+  }
+
+  .works_content{
+    display: block;
+    padding: 0 8%;
+  }
+
+  .works_content li{
+      width: 100%;
+      padding-bottom: 30px;
+  }
+}
