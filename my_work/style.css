@@ -24,34 +24,46 @@ nav{
 }
 
 .menu{
-  font-size: 14.4px;
+  font-size: 15px;
 }
 
 .menu a{
   text-decoration: none;
   margin-left:30px;
+  color: #000000;
 }
 
-.top img{
+.menu .insta img{
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.top_pc img{
+  display: block;
   max-width: 1920px;
   width: 100%;
   height: 420px;
   object-fit: cover;
 }
 
+.top_sp img{
+  display: none;
+}
+
 #about{
   max-width: 960px;
-  margin: 30px auto;
+  margin: 80px auto;
   padding: 0 4%;
 }
 
 h2{
   text-align: center;
+  margin-bottom: 65px;
 }
 
 #works{
   max-width: 960px;
-  margin: 30px auto;
+  margin: 80px auto;
   padding: 0 4%;
 }
 
@@ -70,33 +82,43 @@ h2{
 
 #works img{
   max-width: 100%;
+  transition: 0.5s;
 }
 
 #news{
   max-width: 960px;
-  margin: 30px auto;
+  margin: 80px auto;
   padding: 0px 4%;
 }
 
 #news .text{
-  min-height: 50px;
+  display: flex;
   border-top: 1px solid #C8C8C8;
+  margin: 0;
+  align-items: center;
 }
 
 #news .text:last-child{
   border-bottom: 1px solid #C8C8C8;
 }
 
-#news .text a{
-  display: block;
-  padding: 15px 0;
-  margin: 0 15px;
+#news .text dt{
+  margin-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-#news .text a span{
-  margin-right: 100px;
+#news .text dd{
+  margin-left: 90px;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
+#news .text dd a{
+  text-decoration: none;
+  color: #000000;
+}
 
 #contact{
   max-width: 960px;
@@ -114,20 +136,26 @@ label{
 
 form .name{
   width: 75%;
-  height: 44px;
+  height: 30px;
   margin-bottom: 20px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 form .email{
   width: 75%;
-  height: 44px;
+  height: 30px;
   margin-bottom: 20px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 form textarea{
   width: 75%;
   height: 170px;
   margin-bottom: 20px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .inquiry{
@@ -144,11 +172,6 @@ form textarea{
   margin: 0 auto;
 }
 
-.send:hover{
-  background-color: #ffffff;
-  color: #000000;
-}
-
 footer{
   background-color: #000000;
 }
@@ -160,4 +183,113 @@ footer div{
   color: #ffffff;
   padding: 10px 0;
 }
+
+/* hover処理 */
+@media (hover: hover) {
+
+  .menu a:hover{
+    text-decoration:underline;
+  }
+
+  #works img:hover{
+    max-width: 100%;
+    transform: scale(1.1, 1.1);
+  }
+
+  #news .text dd a:hover{
+    text-decoration:underline;
+  }
+
+  .send:hover{
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* 横幅が600pxまでの場合 */
+@media (max-width: 600px) {
+
+  header{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 4%;
+  }
+  
+  nav{
+    display: block;
+    text-align: center;
+  }
+
+  .menu a{
+    margin: 0 3%;
+  }
+
+  .top_sp img{
+    display: block;
+    max-width: 600px;
+    width: 100%;
+
+  }
+  
+  .top_pc img{
+    display: none;
+  }
+
+  #works ul{
+    display: block;
+    padding: 0;
+  }
+
+  #works li{
+    width: 100%;
+  }
+
+  #works img{
+    overflow: hidden;
+  }
+
+  #news .text{
+    display: block;
+    margin: 0;
+  }
+
+  #news .text dt{
+    margin: 0 3%;
+    padding-bottom: 0;
+  }
+
+  #news .text dd{
+    margin: 0 3%;
+  }
+
+  #contact{
+    max-width: 600px;
+
+  }
+  label{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  form .name{
+    display: block;
+    width: 95%;
+  }
+
+  form .email{
+    display: block;
+    width: 95%;
+  }
+
+  .inquiry {
+    margin-top: 0;
+  }
+
+  form textarea{
+    width: 95%;
+  }
+
+}
+
 
